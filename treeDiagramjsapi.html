@@ -1,0 +1,28 @@
+<html> 
+  <head> 
+    <script type='text/javascript' src='https://www.google.com/jsapi'></script> 
+    <script type='text/javascript'> 
+      google.load('visualization', '1', {packages:['orgchart']}); 
+      google.setOnLoadCallback(drawChart); 
+      function drawChart() { 
+        var data = new google.visualization.DataTable(); 
+        data.addColumn('string', 'Name'); 
+        data.addColumn('string', 'Manager'); 
+        data.addColumn('string', 'ToolTip'); 
+        data.addRows([ 
+          [{v:'大衛', f:'大衛<div style="color:red; font-style:italic">King</div>'}, '', 'The President'], 
+          [{v:'Solomon', f:'Solomon<div style="color:red; font-style:italic">Vice President</div>'}, '大衛', 'VP'], 
+          ['Alice', '大衛', ''], 
+          ['Bob', 'Solomon', 'Bob Sponge'], 
+          ['Carol', 'Bob', ''] 
+        ]); 
+        var chart = new google.visualization.OrgChart(document.getElementById('chart_div')); 
+        chart.draw(data, {allowHtml:true}); 
+      } 
+    </script> 
+  </head> 
+ 
+  <body> 
+    <div id='chart_div'></div> 
+  </body> 
+</html>
