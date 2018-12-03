@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+
+<!- Created	10:15 PM 8/11/2018
+    Last Update	12:44 PM 10/11/2018                                           
+    Web Ref.	https://www.ccel.org/contrib/cn/creeds/heidelberg.html       
+		http://www.hsinchureformed.org/Data/Articles/Heidelberg.pdf 
+		https://www.crcna.org/welcome/beliefs/confessions/heidelberg-catechism 
+
+		http://rcuv.hkbs.org.hk/RCUV_2/TIT/3/
+
+		https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Colors/Color_picker_tool
+		https://htmlcolorcodes.com/color-names/
+-->
+
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+    #lightBlueGrad {
+       
+       background-image: linear-gradient(to bottom, rgba(172,245,245,0), rgba(172,245,245,1)); /* Standard syntax (must be last) */
+    }
+
+    div[id*="myDIV"]
+    {
+       width: 100%;       
+       text-align: center;
+       font-size: 18px;
+       background-color: lightblue;
+       margin-top: 2px;
+       margin-bottom: 6px;
+       padding: 15px 20px 15px 20px;
+       box-sizing: border-box;
+       box-shadow: 3px 3px 2px grey;
+    }
+
+
+    .tooltip {
+       position: relative;
+       display: inline-block;
+       border-bottom: 1px dotted black;
+    }
+
+    .tooltip .tooltiptext {
+       visibility: hidden;
+       width: 200px;
+       background-color: black;
+       color: #fff;
+       text-align: left; font-size: 16px;
+       border-radius: 6px;
+       padding: 5px 0;
+
+       top: 100%;
+       margin-left: -90px;
+
+       /* Position the tooltip */
+       position: absolute;
+       z-index: 1;
+   }
+
+/* add top arrow */
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -8px;
+    border-width: 8px;
+    border-style: solid;
+    border-color: transparent transparent black transparent;
+}
+
+
+   .tooltip:hover .tooltiptext {
+       visibility: visible;
+   }
+
+
+    .tooltip .abouttext {
+       visibility: hidden;
+       width: 460px;
+       background-color: black;
+       color: #fff;
+       text-align: left;
+       border-radius: 6px;
+       padding: 5px 0;
+
+       /* Position the tooltip */
+       position: absolute;
+       z-index: 1;
+   }
+
+   .tooltip:hover .abouttext {
+       visibility: visible;
+   }
+
+   .button {
+       background-color: wheat;
+       border: none;
+       color: DarkGolderRod;
+       padding: 15px 15px;
+       text-align: center;
+       text-decoration: none;
+       display: inline-block;
+       font-size: 18px;
+       margin: 6px 2px;
+       cursor: pointer;
+       width: 100%;
+       box-shadow: 3px 3px 2px grey;
+   }
+
+   .fontsize16 {font-size: 16px; }
+
+   h1 { color: Fuchsia; }
+   h2 { color: DeepPink; }
+   h3 { color: DarkGreen; text-align:center; }
+
+
+a:link, a:visited {
+    background-color: lightcoral;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block; margin-left:5px;
+}
+a:hover, a:active {
+    background-color: indianred;
+}
+
+
+
+</style>
+</head>
+
+<body>
+
+<div id="lightBlueGrad">
+
+<a name="Top">
+
+<h1><div class="tooltip">海德堡要理問答<span class="abouttext fontsize16">德國的普法勒次在1546年成為信義宗的教區，但在這不久，
+改革宗的信仰也在此地傳開。因對聖餐禮觀點的不同，發生了一
+連串的爭辯：信義宗認為基督的身體是實實在在地在餅與杯之中
+，而改革宗則主張餅與杯是基督同在的表征與記號。為了解決此
+教義的分歧，當時在位的腓勒德利三世（Frederick III，1515-
+1576）在研究這兩觀點之后，采納了改革宗的論點。為了教育青
+年，他不顧信義宗所施加的壓力，邀請了數位海德堡大學的教授
+，也是改革宗的上帝學家，完成一個適用于學校、教會及講台信息
+教導的信仰問答，其中最主要的兩位，是善于辯証的烏爾西努
+（Zacharius Ursinus），及善于熱誠表達的俄利維亞努（Casper 
+Olevianus），他們二人的特長成為此問答的特色。腓勒德利三世
+也積極地參與于著作的過程中，帶著論戰性的第80問答，是出于
+他的建議，他並為德國的版本作了一篇序言。這份問答于1563年
+的1月，在海德堡的議會中被采用，故以此名之。在出版的同時，
+拉丁文版本也已完成。
+
+</span></div>
+</h1>
+
+<p style="color:violet"><b>按下問題以顯示答案</b></p>
+
+<a href="#Bottom" style="float:right">頁面底部</a>
+<a href="#q003" style="float:right">Q3</a>
+<br><h3>主日 一</h3>
+
+<button  class="button"  onclick="myFunction('001')">問一：你生與死的唯一安慰是什麼？</button>
+<a name="q001">
+<div id="myDIV001">
+  答：在生和死兩者之中，我的身體、靈魂<div class="tooltip"><sup>1</sup><span class="tooltiptext">林前6：19-20：<br>你們豈不知道你們的身體是聖靈的殿嗎？這聖靈是從上帝而來，住在你們裏面的。而且你們不是屬自己的人，因為你們是重價買來的。所以，要在你們的身體上榮耀上帝。</span></div>都不屬于我自己
+<div class="tooltip"><sup>2</sup><span class="tooltiptext">羅14：7-9：<br>我們沒有一個人為自己而活，也沒有一個人為自己而死。我們若活，是為主而活；我們若死，是為主而死。所以，我們或死或活總是主的人。為此，基督死了，又活了，為要作死人和活人的主。</span></div>
+，乃是屬于我信實的救主耶穌基督<div class="tooltip"><sup>3</sup><span class="tooltiptext">林前3：23：<br>而你們是屬基督的，基督是屬上帝的。</span></div>
+，他用寶血<div class="tooltip"><sup>4</sup><span class="tooltiptext">彼前1：18-19：<br>你們知道，你們得以從你們祖先傳下來虛妄的行為中救贖出來，不是靠著會朽壞的金銀等物，而是憑著基督的寶血，如同無瑕疵、無玷污的羔羊的血。</span></div>
+完全涂抹了我一切的罪惡<div class="tooltip"><sup>5</sup><span class="tooltiptext">約翰一書1：7：<br>我們若在光明中行走，如同上帝在光明中，就彼此有團契，他兒子耶穌的血就洗淨我們一切的罪。</span></div>，
+並且救贖我脫離魔鬼一切的權勢<div class="tooltip"><sup>6</sup><span class="tooltiptext">約翰一書3：8-9：<br>犯罪的是出於魔鬼，因為魔鬼從起初就犯罪。上帝的兒子顯現出來，是為了要毀滅魔鬼的作為。凡從上帝生的，不犯罪，因上帝的道存在他裏面，他也不能犯罪，因為他是由上帝所生的。<br>希伯來書2:14-15:<br>既然兒女同有血肉之軀，他也照樣親自成了血肉之軀，為能藉著死敗壞那掌管死權的，就是魔鬼，並要釋放那些一生因怕死而作奴隸的人。</span></div>；
+他保守我<div class="tooltip"><sup>7</sup><span class="tooltiptext">約6：39-40：<br>差我來那位的旨意就是：他所賜給我的，要我一個也不失落，並且在末日使他復活。因為我父的旨意是要使每一個見了子而信的人得永生，並且在末日我要使他復活。」</span></div>，
+若非天父允許，我的頭髮一根也不能掉下<div class="tooltip"><sup>8</sup><span class="tooltiptext">太10:29-31:<br>兩隻麻雀不是賣一銅錢嗎？你們的父若不許，一隻也不會掉在地上。就是你們的頭髮也都數過了。所以，不要懼怕，你們比許多的麻雀還貴重！」<br>路21：16-19：<br>連你們的父母、兄弟、親族、朋友也要把你們交給官府；你們中間也將有被他們害死的。你們要為我的名被眾人憎恨。然而，你們連一根頭髮也不會損失。你們憑著堅忍，就必保全性命。」</span></div>；
+他又叫萬事互相效力，使我得救<div class="tooltip"><sup>9</sup><span class="tooltiptext">羅8:28:<br>我們知道，萬事都互相效力，叫愛上帝的人得益處，就是按他旨意被召的人。</span></div>。
+因為我屬基督，他透過聖靈使我確實知道有永生<div class="tooltip"><sup>10</sup><span class="tooltiptext">羅8:15-16:<br>你們所領受的不是奴僕的靈，仍舊害怕；所領受的是兒子名分的靈，因此我們呼叫：「阿爸，父！」聖靈自己與我們的靈一同見證我們是上帝的兒女。<br>林後1:21-22<br>那在基督裏堅固我們和你們，並且膏抹我們的，就是上帝。他在我們身上蓋了印，並賜聖靈在我們心裏作憑據。<br>5:5那為我們安排這事的是上帝，他賜給我們聖靈作憑據。<br>弗1:13-14<br>在基督裏你們聽見真理的道，就是那使你們得救的福音，你們也信了他，就受了所應許的聖靈為印記。這聖靈是我們得基業的憑據，直等到上帝的子民得救贖，使他的榮耀得到稱讚。</span></div>，
+也使我從此以後甘心樂意為他而活<div class="tooltip"><sup>11</sup><span class="tooltiptext">羅8:14 (cf.8:1-17):<br>因為凡被上帝的靈引導的都是上帝的兒子。<br>7:22 因為，按著我裏面的人，我喜歡上帝的律</span></div>。
+
+</div>
+
+<br>
+<a name="q002">
+<button class="button" onclick="myFunction('002')">問二：為了叫你在這種安慰中快樂地生或死，有多少事情是你必須知道的呢？</button>
+<div id="myDIV002">
+  答：有三件事我應當知道<div class="tooltip"><sup>12</sup><span class="tooltiptext">路24：47:<br>並且人們要奉他的名傳悔改、使罪得赦的道，從耶路撒冷起直傳到萬邦。</span></div>：第一，我的罪惡和愁苦有多大<div class="tooltip"><sup>13</sup><span class="tooltiptext">羅3：9-10:<br>那又怎麼樣呢？我們比他們強嗎？絕不是！因我們已經指證：猶太人和希臘人都在罪惡之下。就如經上所記：「沒有義人，連一個也沒有。<br>約一1:10<br>我們若說自己沒有犯過罪，就是把上帝當作說謊的，他的道就不在我們裏面了。</span></div>。
+      第二，我當怎樣從自己一切罪惡和愁苦中得到釋放<div class="tooltip"><sup>14</sup><span class="tooltiptext">約17：3:<br>認識你—獨一的真上帝，並且認識你所差來的耶穌基督，這就是永生。<br>使4:12:<br>除他以外，別無拯救，因為在天下人間，沒有賜下別的名，我們可以靠著得救。」<br>10:43 眾先知也為這人作見證：凡信他的人，必藉著他的名得蒙赦罪。」</span></div>。
+      第三，我當如何為這樣的拯救感謝上帝<div class="tooltip"><sup>15</sup><span class="tooltiptext">太5：16：<br>你們的光也要這樣照在人前，叫他們看見你們的好行為，把榮耀歸給你們在天上的父。」<br>羅6：13:<br>也不要把你們的肢體獻給罪作不義的工具，倒要像從死人中活著的人，把自己獻給上帝，並把你們的肢體獻給上帝作義的工具。<br>弗5：8-10：<br>從前你們是暗昧的，但如今在主裏面是光明的，行事為人要像光明的子女———光明所結的果子就是一切的良善、公義、誠實。總要察驗甚麼是主所喜悅的事。<br>彼前2:9-10:<br>不過，你們是被揀選的一族，是君尊的祭司，是上帝聖的國度，是屬上帝的子民，要使你們宣揚那召你們出黑暗入奇妙光明者的美德。「你們從前不是子民，現在卻成了上帝的子民；從前未曾蒙憐憫，現在卻蒙了憐憫。」</span></div>。
+</div>
+
+<br><br>
+
+<h2>第一部 論人的罪及苦情</h2>
+<h3>主日 二</h3>
+
+<a name="q003">
+<button  class="button" onclick="myFunction('003')">問三：你從何處知道你的愁苦呢？</button>
+<div id="myDIV003">
+答：從上帝的律法<div class="tooltip"><sup>1</sup><span class="tooltiptext">羅3：20：<br>所以，凡血肉之軀沒有一個能因律法的行為而在上帝面前稱義，因為律法本是要人認識罪。<br>7:7b ...但是，若不是藉著律法，我就不知何為罪；若不是律法說「不可貪心」，我就不知何為貪心。(cf.7:7-25)</span></div>。
+</div>
+
+<a name="q004">
+<button  class="button" onclick="myFunction('004')">問四：上帝的律法對我們有什麼要求？</button>
+<div id="myDIV004">
+答：基督已在馬太福音廿二章37-40節總括的教訓了我們：
+耶穌對他說：「你要盡心、盡性、盡意愛主—你的上帝。這是最大的，且是第一條誡命。第二條也如此，就是要愛鄰如己。這兩條誡命是一切律法和先知書的總綱<div class="tooltip"><sup>2</sup><span class="tooltiptext">路10：27：<br>他回答說：「你要盡心、盡性、盡力、盡意愛主—你的上帝，又要愛鄰如己。」<br>申6：5:<br>你要盡心、盡性、盡力愛耶和華－你的上帝。<br>利19：18:<br>不可報仇，也不可埋怨你本國的子民。你要愛鄰如己。我是耶和華。</span></div>
+。」
+</div>
+
+<a name="q005">
+<button  class="button" onclick="myFunction('005')">問五：你能完全遵守這些誡命嗎？</button>
+<div id="myDIV005">
+答：不能<div class="tooltip"><sup>3</sup><span class="tooltiptext">羅3：10,20,23：<br>就如經上所記：「沒有義人，連一個也沒有。...所以，凡血肉之軀沒有一個能因律法的行為而在上帝面前稱義，因為律法本是要人認識罪。...因為世人都犯了罪，虧缺了上帝的榮耀，(cf.3:9-20,23)<br>約壹1：8,10：<br>我們若說自己沒有罪，就是欺騙自己，真理就不在我們裏面了。我們若說自己沒有犯過罪，就是把上帝當作說謊的，他的道就不在我們裏面了。</span></div>；
+因為我的本性是傾向於憎恨上帝和鄰舍的<div class="tooltip"><sup>4</sup><span class="tooltiptext">創6：5:<br>耶和華見人在地上罪大惡極，終日心裏所想的盡都是惡事，<br>耶17：9:<br>「人心比萬物都詭詐，壞到極處，誰能識透呢？<br>羅8：7:<br>因為體貼肉體就是與上帝為敵，對上帝的律法不順服，事實上也無法順服。(cf.7:23-24)<br>(cf.弗2：1-3)<br>多3：3:<br>我們從前也是無知、悖逆、受迷惑，作各樣私慾和宴樂的奴隸，在惡毒、嫉妒中度日，是可恨的，而且彼此相恨。</span></div>。
+</div>
+
+<br><br><h3>主日 三</h3>
+<a name="q006">
+<button  class="button" onclick="myFunction('006')">問六：上帝造人原本就是如此邪惡和悖逆嗎？</button>
+<div id="myDIV006">
+答：不；上帝造人原本是良善的<div class="tooltip"><sup>1</sup><span class="tooltiptext">創1：31：<br>上帝看一切所造的，看哪，都非常好。有晚上，有早晨，這是第六日。</span></div>，
+且按照他自己的形象<div class="tooltip"><sup>2</sup><span class="tooltiptext">創1：26-27：<br>上帝說：「我們要照著我們的形像，按著我們的樣式造人，使他們管理海裏的魚、天空的鳥、地上的牲畜和全地，以及地上爬的一切爬行動物。」上帝就照著他的形像創造人，照著上帝的形像創造他們；他創造了他們，有男有女。</span></div>，
+就是公義和聖潔<div class="tooltip"><sup>3</sup><span class="tooltiptext">弗4：24：<br>並且穿上新我；這新我是照著上帝的形像造的，有從真理來的公義和聖潔。</span></div>；
+以致他能正確地知道他的創造者上帝<div class="tooltip"><sup>4</sup><span class="tooltiptext">西3：10：<br>穿上了新人，這新人照著造他的主的形像在知識上不斷地更新。</span></div>，誠心愛他 ，
+與他同住在永福中，讚美、榮耀他<div class="tooltip"><sup>5</sup><span class="tooltiptext">詩8：4-5：<br>人算甚麼，你竟顧念他！世人算甚麼，你竟眷顧他！你使他比上帝微小一點，賜他榮耀尊貴為冠冕。<br>(cf.詩8全篇)</span></div>。
+</div>
+
+<a name="q007">
+<button  class="button" onclick="myFunction('007')">問七：那麼，這種墮落的人性是從何而來？</button>
+<div id="myDIV007">
+答：是從我們的始祖亞當和夏娃在樂園中墮落與悖逆而來<div class="tooltip"><sup>6</sup><span class="tooltiptext">創3：6-7：<br>於是女人見那棵樹好作食物，又悅人的眼目，那樹令人喜愛，能使人有智慧，她就摘下果子吃了，又給了與她一起的丈夫，他也吃了。他們二人的眼睛就開了，知道自己赤身露體，就編織無花果樹的葉子，為自己做成裙子。(cf.創3全章)</span></div>，
+因此我們的本性變得敗壞，我們都在罪裏成孕出生<div class="tooltip"><sup>7</sup><span class="tooltiptext">羅5：12、18-19：<br>為此，正如罪是從一人進入世界，死又從罪而來，於是死就臨到所有的人，因為人人都犯了罪。<br>這樣看來，因一次的過犯，所有的人都被定罪；照樣，因一次的義行，所有的人也就被稱義而得生命了。因一人的悖逆，眾人成為罪人；照樣，因一人的順從，眾人也成為義了。</span></div>。
+</div>
+<a name="q008">
+<button  class="button" onclick="myFunction('008')">問八：是否我們都墮落深沉，以致完全無心向善而只傾向于惡呢？</button>
+<div id="myDIV008">
+答：是<div class="tooltip"><sup>8</sup><span class="tooltiptext">創6：5,8:21：<br>耶和華見人在地上罪大惡極，終日心裏所想的盡都是惡事，<br>耶和華聞了那馨香之氣，耶和華心裏說：「我不再因人的緣故詛咒土地，因為人從幼年就心裏懷著惡念；我也不再照我曾做的毀滅一切生物了。<br>伯14：4：<br>壯士若死了能再活嗎？我在一切服役的日子中等待，直到我退伍的時候來到。<br>賽53：6：<br>我們都如羊走迷，各人偏行己路；耶和華使我們眾人的罪孽都歸在他身上。</span></div>；
+除非我們都由上帝的靈重生<div class="tooltip"><sup>9</sup><span class="tooltiptext">約3：3-5：<br>耶穌回答他說：「我實實在在地告訴你，人若不重生，就不能見上帝的國。」尼哥德慕對他說：「人已經老了，如何能重生呢？豈能再進母腹生出來嗎？」耶穌回答：「我實實在在地告訴你，人若不是從水和聖靈生的，就不能進上帝的國。</span></div>。
+</div>
+
+<br><br><h3>主日 四</h3>
+<a name="q009">
+<button  class="button" onclick="myFunction('009')">問九：那麼，上帝在衪的律法中要求人行他不能行的事，豈非冤屈人嗎？</button>
+<div id="myDIV009">
+答：不<div class="tooltip"><sup>1</sup><span class="tooltiptext">傳7：29：<br>你看，我所找到的只有一件，就是上帝造的人是正直的，但他們卻尋出許多詭計。」</span></div>；
+因為上帝造人，叫他本來能行律法<div class="tooltip"><sup>2</sup><span class="tooltiptext">創1：31：<br>上帝看一切所造的，看哪，都非常好。有晚上，有早晨，這是第六日。<br>弗4：24：<br>並且穿上新我；這新我是照著上帝的形像造的，有從真理來的公義和聖潔。</span></div>；
+但人因著魔鬼的慫恿挑动<div class="tooltip"><sup>3</sup><span class="tooltiptext">創3：13：<br>耶和華上帝對女人說：「你怎麼會做這種事呢？」女人說：「那蛇引誘我，我就吃了。」<br>約8：44：<br>你們是出於你們的父魔鬼，你們寧願隨著你們父的慾念而行。他從起初就是殺人的，不守真理，因他心裏沒有真理。他說謊是出於自己的本性，因他本來是說謊的，也是說謊者之父。</span></div>，
+自甘悖逆<div class="tooltip"><sup>4</sup><span class="tooltiptext">創3：6：<br>於是女人見那棵樹好作食物，又悅人的眼目，那樹令人喜愛，能使人有智慧，她就摘下果子吃了，又給了與她一起的丈夫，他也吃了。</span></div>，
+把自己和後裔行善的這種能力奪去了<div class="tooltip"><sup>5</sup><span class="tooltiptext">羅5：12,18,19：<br>為此，正如罪是從一人進入世界，死又從罪而來，於是死就臨到所有的人，因為人人都犯了罪。<br>這樣看來，因一次的過犯，所有的人都被定罪；照樣，因一次的義行，所有的人也就被稱義而得生命了。因一人的悖逆，眾人成為罪人；照樣，因一人的順從，眾人也成為義了。</span></div>。
+</div>
+
+<a name="q010">
+<button  class="button" onclick="myFunction('010')">問十：上帝會否放任這種悖逆和背信，而讓它們不受刑罰呢？</button>
+<div id="myDIV010">
+答：決不；衪極厭惡<div class="tooltip"><sup>6</sup><span class="tooltiptext">詩5：4-5：<br>因為你不是喜愛邪惡的上帝，惡人不能與你同住。狂傲的人不能站在你眼前；凡作惡的，都是你所恨惡的。</span></div>
+我們生來就有的罪和本身所犯的罪，並要在今生和永恆中用公義的審判去刑罰罪惡<div class="tooltip"><sup>7</sup><span class="tooltiptext">出34：7：<br>為千代的人存留慈愛，赦免罪孽、過犯和罪惡，萬不以有罪的為無罪，必懲罰人的罪，自父及子，直到三、四代。」<br>鴻1：2：<br>耶和華是忌邪、報應的上帝。耶和華施報應，大有憤怒；耶和華向他的敵人報應，向他的仇敵懷怒。<br>羅1：18：<br>原來，上帝的憤怒從天上顯明在一切不虔不義的人身上，就是那些行不義壓制真理的人。<br>弗5：6：<br>不要被人虛浮的話欺騙了，因這些事，上帝的憤怒必臨到那些悖逆的人。<br>來9；27：<br>按著命定，人人都有一死，死後且有審判。</span></div>，
+正如他已宣告：『凡不時常遵守律法書上所寫的，都是被咒詛的<div class="tooltip"><sup>8</sup><span class="tooltiptext">加3：10：<br>凡出於律法的行為都是受詛咒的，因為經上記著：「凡不持守律法書上所記的一切而去行的，都是受詛咒的。」<br>申27：26：<br>「『不堅守遵行這律法之話的，必受詛咒！』眾百姓要說：『阿們！』」</span></div>
+』</div>
+
+<a name="q011">
+<button  class="button" onclick="myFunction('011')">問十一：上帝不也是慈愛的嗎？</button>
+<div id="myDIV011">
+  答：上帝固然是慈愛的<div class="tooltip"><sup>9</sup><span class="tooltiptext">出34：6-7：<br>耶和華在他面前經過，宣告：「耶和華，耶和華，有憐憫，有恩惠的上帝，不輕易發怒，且有豐盛的慈愛和信實，<br>為千代的人存留慈愛，赦免罪孽、過犯和罪惡，萬不以有罪的為無罪，必懲罰人的罪，自父及子，直到三、四代。」<br>詩103：8-9：<br>耶和華有憐憫，有恩惠，不輕易發怒，且有豐盛的慈愛。他不長久責備，也不永遠懷怒。</span></div>，
+但衪同樣也是公義的；因此衪的公義要求9那
+      干犯了至高上帝之威嚴的罪惡，必須受到極刑10，就是身體和靈魂
+      同樣受到永遠的刑罰11。
+</div>
+
+<br><br>
+<h2>第二部 論人的救贖</h2>
+<h3>主日 五</h3>
+<a name="q012">
+<button  class="button" onclick="myFunction('012')">問十二：既然我們因神公義的審判，應受到今世和永遠的刑罰，那麼我們怎
+      麼才能逃避這刑罰，並且能再次蒙神恩寵呢？</button>
+
+<div id="myDIV012">
+  答：神要求衪的公義得到滿足1，因此我們必須滿足衪的公義，不是由我
+      們自已達到，就是由別人完成2。
+</div>
+
+<a name="q013">
+<button  class="button" onclick="myFunction('013')">問13：我們自已能夠滿足神公義的要求嗎？</button>
+<div id="myDIV013">
+答：決不能3；相反地，我們天天增添自己的罪咎4。
+</div>
+
+<a name="q014">
+<button  class="button" onclick="myFunction('014')">問14：有任何（僅是）受造者能夠為我們滿足神公義的要求嗎？</button>
+<div id="myDIV014">
+答：沒有；首先，因為神不會將人自己所犯的罪加罰于其他任何受造者5；
+      其次，僅是受造者不能擔當神對罪惡所發出的永遠忿怒的重擔，而能
+      使第三者從其中得救贖的6。
+</div>
+
+<br><br>
+<a href="#Top" style="float:right">頁面頂部</a>&nbsp;&nbsp;
+<br>
+<a name="Bottom">
+<br><br><br>br><br>
+
+</div>
+
+
+<script>
+
+function myFunction(y) {
+    var elem = "myDIV".concat(y);
+    var x = document.getElementById(elem);
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
+
+var elem = "";
+for (i=1; i<15; i++) {
+    elem = "myDIV".concat((1000+i).toString().substring(1,4));        
+    document.getElementById(elem).style.display="none";
+}
+
+</script>
+
+</body>
+</html>
+
