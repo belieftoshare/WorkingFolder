@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<!--
+     https://github.com/honza/bibles/blob/master/ESV/ESV.xml
+     https://github.com/honza/bibles
+  -->
+<head>
+  <script src="https://unpkg.com/ag-grid-community/dist/ag-grid-community.min.noStyle.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/ag-grid-community/dist/styles/ag-grid.css">
+  <link rel="stylesheet" href="https://unpkg.com/ag-grid-community/dist/styles/ag-theme-balham.css">
+</head>
+<body>
+  <h3>ag-grid</h3>
+  
+  <div id="myGrid" style="height: 600px;width:800px;" class="ag-theme-balham"></div>
+
+  <script type="text/javascript" charset="utf-8">
+    // specify the columns
+    var columnDefs = [
+      {headerName: "Book", field: "bk", width:80, filter: "agTextColumnFilter", rowGroup: true},
+      {headerName: "Chapter", field: "chap", width:70, rowGroup: true, suppressSizeToFit: false},
+      {headerName: "Verse", field: "vse", width:70},
+      {headerName: "Text", field: "txt", width:500}
+    ];
+    
+    // specify the data
+    var rowData = [
+      {bk: "Genesis", chap: "1", vse: "1", txt:"In the beginning, God created the heavens and the earth."},
+      {bk: "Genesis", chap: "1", vse: "2", txt:"The earth was without form and void, and darkness was over the face of the deep. And the Spirit of God was hovering over the face of the waters."},
+      {bk: "Genesis", chap: "1", vse: "3", txt:"And God said, 'Let there be light,' and there was light."},
+      {bk: "Genesis", chap: "2", vse: "1", txt:"Thus the heavens and the earth were finished, and all the host of them."},
+      {bk: "Genesis", chap: "2", vse: "2", txt:"And on the seventh day God finished his work that he had done, and he rested on the seventh day from all his work that he had done."},
+      {bk: "Exodus", chap: "1", vse: "1", txt:"These are the names of the sons of Israel who went to Egypt with Jacob, each with his family:"},
+      {bk: "Exodus", chap: "1", vse: "2", txt:"Reuben, Simeon, Levi and Judah;"}
+    ];
+    
+    // let the grid know which columns and what data to use
+    var gridOptions = {
+      enableFilter: true,      
+      columnDefs: columnDefs,
+      enableSorting: true,
+      enableColResize: true,
+      groupUseEntireRow: true,animateRows: true,
+      enableRangeSelection: true,
+      rowData: rowData
+    };
+
+  // lookup the container we want the Grid to use
+  var eGridDiv = document.querySelector('#myGrid');
+
+  // create the grid passing in the div to use together with the columns & data we want to use
+  new agGrid.Grid(eGridDiv, gridOptions);
+
+  </script>
+</body>
+</html>
